@@ -4,7 +4,7 @@
 
 Source code for my personal portfolio. Built with a focus on performance, clean typography, and responsive design.
 
-![Portfolio Desktop Preview](./public/screenshot.png)
+![Portfolio Desktop Preview](./public/desktop-view-screenshot.png)
 
 ## Tech Stack
 
