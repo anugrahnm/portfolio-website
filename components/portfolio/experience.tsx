@@ -2,10 +2,9 @@ import { ExternalLink, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    period: "Freelance",
+    period: "Freelance · 2025",
     role: "Web Developer",
     company: "B&A Systems",
-    companyUrl: "#",
     description:
       "Designed and engineered a professional single-page business application for a quantitative analytics firm catering to UCITS fund managers.",
     bullets: [
@@ -29,8 +28,9 @@ const educationItems = [
     school: "University of West London",
     location: "London, UK",
     degree: "B.S. (Hons) Computer Science",
+    grade: "First Class Honours - 78% Overall",
     details:
-      "Graduated: January 2026 — First Class Honours (75% Overall). Coursework: Data Structures & Algorithms, OOP, Software Engineering, UX/UI, Database Management Systems.",
+      "Graduated: Febraury 2026 - Coursework:AI, ML, Data Structures & Algorithms, OOP, Software Engineering, Database Management Systems.",
   },
 ];
 
@@ -45,7 +45,6 @@ export function Experience() {
           {experiences.map((exp) => (
             <a
               key={exp.company}
-              href={exp.companyUrl}
               className="group relative rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:bg-card/80"
             >
               <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
@@ -54,7 +53,6 @@ export function Experience() {
                   <span className="inline-flex items-center gap-1 text-primary">
                     {"· "}
                     {exp.company}
-                    <ExternalLink className="inline-block h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                   </span>
                 </h3>
                 <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
@@ -104,14 +102,15 @@ export function Experience() {
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground">
-                    {item.school}
-                  </h4>
+                  <h4 className="font-medium text-foreground">{item.school}</h4>
                   <p className="text-sm text-muted-foreground">
                     {item.location}
                   </p>
                   <p className="mt-2 text-sm text-secondary-foreground">
                     {item.degree}
+                  </p>
+                  <p className="mt-1 text-xs text-secondary-foreground">
+                    {item.grade}
                   </p>
                   <p className="mt-1 text-xs text-muted-foreground">
                     {item.details}
@@ -126,13 +125,7 @@ export function Experience() {
   );
 }
 
-function SectionHeader({
-  number,
-  title,
-}: {
-  number: string;
-  title: string;
-}) {
+function SectionHeader({ number, title }: { number: string; title: string }) {
   return (
     <div className="flex items-center gap-4">
       <span className="font-mono text-sm text-primary/60">{number}</span>

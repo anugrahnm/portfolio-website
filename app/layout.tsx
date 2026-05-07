@@ -16,9 +16,32 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anugrah Narikuni Mattumpurath — Web Developer",
+  title: "Anugrah NM — Web Developer",
   description:
-    "First Class Honours Computer Science graduate and web developer specialized in React, Next.js, and Supabase.",
+    "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+  openGraph: {
+    title: "Anugrah NM — Web Developer",
+    description:
+      "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+    url: "https://anugrah.dev",
+    siteName: "Anugrah NM",
+    images: [
+      {
+        url: "https://anugrah.dev/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Anugrah NM — Web Developer",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anugrah NM — Web Developer",
+    description:
+      "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+    images: ["https://anugrah.dev/og-image.png"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -34,9 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
-      {/* 1. We add both variables to the body class 
-          2. We set a default font (usually Space Grotesk for a modern look)
-      */}
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >

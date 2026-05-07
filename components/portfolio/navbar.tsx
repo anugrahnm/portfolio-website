@@ -55,12 +55,20 @@ export function Navbar() {
         </button>
 
         {/* Logo */}
-        <a
-          href="#home"
-          className="font-mono text-2xl tracking-tight text-primary"
-        >
-          {"Anugrah._"}
-        </a>
+        <div>
+          <a
+            href="#home"
+            className="font-mono text-2xl tracking-tight text-primary"
+          >
+            {"Anugrah."}
+          </a>
+          <a
+            href="#home"
+            className="font-mono text-2xl tracking-tight text-primary animate-blink"
+          >
+            {"_"}
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <ul className="hidden items-center gap-10 lg:flex">

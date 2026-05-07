@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "TaskFlow",
-    url: "https://github.com/anugrahnm",
+    url: "https://github.com/anugrahnm/taskflow",
     description:
       "A full-stack task management application using Next.js and Supabase, leveraging PostgreSQL for robust data persistence.",
     bullets: [

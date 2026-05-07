@@ -6,18 +6,31 @@ export function Contact() {
       <div className="mx-auto max-w-5xl">
         <SectionHeader number="05" title="contact" />
         <div className="mt-12 flex flex-col items-center text-center">
-          <p className="leading-relaxed text-muted-foreground">
-            {"I'm"} currently open to on-site, remote, or hybrid roles and
-            always happy to discuss new opportunities, collaborations, or just
-            connect.
+          {/* Status pill */}
+          <div className="mb-6 flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-mono text-primary">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            </span>
+            Open to on-site, remote &amp; hybrid roles
+          </div>
+
+          <p className="max-w-md leading-relaxed text-muted-foreground">
+            {"I'm"} currently available and actively looking. Whether it&apos;s
+            a role, a collaboration, or just a conversation — reach out.
           </p>
+
           <a
             href="mailto:anugrahnm.dev@gmail.com"
-            className="mt-8 flex w-full  min-h-[44px] items-center justify-center gap-2 rounded-lg border border-primary bg-primary/10 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            className="mt-8 flex w-full min-h-[44px] items-center justify-center gap-2 rounded-lg bg-primary/80 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-colors hover:bg-primary/70"
           >
             <Mail className="h-4 w-4" />
-            Say Hello!
+            Say Hello_
           </a>
+
+          <p className="mt-4 font-mono text-xs text-muted-foreground">
+            anugrah.dev · London, UK
+          </p>
         </div>
       </div>
     </section>
@@ -27,7 +40,6 @@ export function Contact() {
 function SectionHeader({ number, title }: { number: string; title: string }) {
   return (
     <div className="flex flex-row items-center justify-start gap-4">
-      {/* <span className="hidden h-px w-12 bg-border sm:block" /> */}
       <span className="font-mono text-sm text-primary/60">{number}</span>
       <h2 className="text-2xl flex gap-4 font-bold uppercase tracking-tight text-foreground sm:text-3xl">
         <span className="font-mono text-muted-foreground">{"// "}</span>

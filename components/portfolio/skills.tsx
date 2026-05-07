@@ -2,9 +2,9 @@ const skillCategories = [
   {
     title: "Languages",
     skills: [
-      "JavaScript (ES6+)",
       "TypeScript",
-      "SQL (PostgreSQL)",
+      "JavaScript",
+      "SQL (SQLite & PostgreSQL)",
       "Python",
       "HTML5",
       "CSS3",
@@ -64,13 +64,7 @@ export function Skills() {
   );
 }
 
-function SectionHeader({
-  number,
-  title,
-}: {
-  number: string;
-  title: string;
-}) {
+function SectionHeader({ number, title }: { number: string; title: string }) {
   return (
     <div className="flex items-center gap-4">
       <span className="font-mono text-sm text-primary/60">{number}</span>
