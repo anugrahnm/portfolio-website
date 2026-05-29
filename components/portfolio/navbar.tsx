@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 
 const navItems = [
   { id: "home", label: "home", number: "01" },
@@ -97,10 +97,11 @@ export function Navbar() {
         {/* Desktop resume button */}
         <a
           href="/resume.pdf"
-          download="Anugrah_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden min-h-[44px] items-center gap-2 rounded-lg border border-primary/30 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 lg:inline-flex"
         >
-          <Download className="h-4 w-4" />
+          <ExternalLink className="h-4 w-4" />
           Resume
         </a>
 
@@ -120,7 +121,7 @@ export function Navbar() {
 
       {/* Mobile drawer */}
       <aside
-        className={`fixed top-0 left-0 z-[70] flex h-full w-4/5 max-w-sm flex-col bg-[hsl(210,20%,95%)] p-8 transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 z-[70] flex h-full w-4/5 max-w-sm flex-col bg-background p-8 transition-transform duration-300 ease-in-out lg:hidden border-r border-border ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         role="dialog"
@@ -130,7 +131,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen(false)}
-          className="mb-12 flex min-h-[44px] min-w-[44px] items-center justify-center self-start rounded-full bg-[hsl(210,15%,85%)] text-[hsl(210,25%,15%)]"
+          className="mb-12 flex min-h-[44px] min-w-[44px] items-center justify-center self-start rounded-full bg-secondary text-foreground"
           aria-label="Close menu"
         >
           <X className="h-5 w-5" />
@@ -142,11 +143,9 @@ export function Navbar() {
               <a
                 href={`#${item.id}`}
                 onClick={() => setMenuOpen(false)}
-                className="block min-h-[44px] py-1 font-medium text-lg text-[hsl(210,25%,15%)] transition-colors active:text-primary"
+                className="block min-h-[44px] py-1 font-medium text-lg text-foreground transition-colors active:text-primary"
               >
-                <span className="font-mono text-[hsl(210,12%,55%)]">
-                  {"// "}
-                </span>
+                <span className="font-mono text-muted-foreground">{"// "}</span>
                 {item.label}
               </a>
             </li>
@@ -156,18 +155,19 @@ export function Navbar() {
         {/* Resume link in drawer */}
         <a
           href="/resume.pdf"
-          download="Anugrah_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={() => setMenuOpen(false)}
-          className="mt-8 inline-flex min-h-[44px] items-center gap-2 text-lg font-medium text-[hsl(210,25%,15%)]"
+          className="mt-8 inline-flex min-h-[44px] items-center gap-2 text-lg font-medium text-foreground"
         >
-          <Download className="h-5 w-5" />
-          Download Resume
+          <ExternalLink className="h-5 w-5" />
+          Resume
         </a>
 
-        <p className="mt-auto text-sm text-[hsl(210,12%,45%)]">
-          {"Made with passion by Anugrah NM."}
+        <p className="mt-auto text-sm text-muted-foreground">
+          anugrahnm.dev@gmail.com
           <br />
-          All rights reserved.
+          Open to junior and graduate roles.
         </p>
       </aside>
     </>
