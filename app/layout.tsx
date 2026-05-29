@@ -16,13 +16,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anugrah NM — Web Developer",
+  metadataBase: new URL("https://anugrah.dev"),
+  alternates: {
+    canonical: "/",
+  },
+  title: "Anugrah NM — Software Engineer",
   description:
-    "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+    "London-based software engineer with First Class Honours in CS. Building full-stack web apps with TypeScript, React, Next.js, Python, FastAPI and PostgreSQL. Open to on-site, remote, and hybrid roles.",
   openGraph: {
-    title: "Anugrah NM — Web Developer",
+    title: "Anugrah NM — Software Engineer",
     description:
-      "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+      "London-based software engineer with First Class Honours in CS. Building full-stack web apps with TypeScript, React, Next.js, Python, FastAPI and PostgreSQL. Open to on-site, remote, and hybrid roles.",
     url: "https://anugrah.dev",
     siteName: "Anugrah NM",
     images: [
@@ -30,20 +34,19 @@ export const metadata: Metadata = {
         url: "https://anugrah.dev/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Anugrah NM — Web Developer",
+        alt: "Anugrah NM — Software Engineer",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anugrah NM — Web Developer",
+    title: "Anugrah NM — Software Engineer",
     description:
-      "London-based web developer with First Class Honours in CS. Building fast, accessible web apps with TypeScript, React, Next.js, Supabase, Python and SQL. Open to on-site, remote, and hybrid roles.",
+      "London-based software engineer with First Class Honours in CS. Building full-stack web apps with TypeScript, React, Next.js, Python, FastAPI and PostgreSQL. Open to on-site, remote, and hybrid roles.",
     images: ["https://anugrah.dev/og-image.png"],
   },
 };
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,

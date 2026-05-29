@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react"
+import React from "react";
 
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
@@ -17,7 +17,7 @@ export function Hero() {
 
       {/* Subtitle */}
       <p className="mt-4 font-mono text-sm uppercase tracking-[0.3em] text-muted-foreground sm:text-base lg:text-lg">
-        Web Developer & CS Graduate.
+        Software Engineer & CS Graduate.
       </p>
 
       {/* Social row */}

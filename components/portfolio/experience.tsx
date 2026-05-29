@@ -1,8 +1,8 @@
-import { ExternalLink, GraduationCap } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    period: "Freelance · 2025",
+    period: "Freelance · Remote · Jan - Mar 2025",
     role: "Web Developer",
     company: "B&A Systems",
     description:
@@ -27,10 +27,10 @@ const educationItems = [
   {
     school: "University of West London",
     location: "London, UK",
-    degree: "B.S. (Hons) Computer Science",
-    grade: "First Class Honours - 78% Overall",
+    degree: "BSc (Hons) Computer Science",
+    grade: "First Class Honours — 78% Overall",
     details:
-      "Graduated: Febraury 2026 - Coursework:AI, ML, Data Structures & Algorithms, OOP, Software Engineering, Database Management Systems.",
+      "Graduated: February 2026 · Notable grades: Programming 93%, Machine Learning 90%, Theory of Computation 82%, Data Communications 85%, Algorithms & Data Types 84%.",
   },
 ];
 

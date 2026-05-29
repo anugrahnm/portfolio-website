@@ -9,7 +9,7 @@ export function Contact() {
           {/* Status pill */}
           <div className="mb-6 flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-mono text-primary">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+              {/* <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" /> */}
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
             Open to on-site, remote &amp; hybrid roles

@@ -2,24 +2,17 @@ const skillCategories = [
   {
     title: "Languages",
     skills: [
+      "Python",
       "TypeScript",
       "JavaScript",
-      "SQL (SQLite & PostgreSQL)",
-      "Python",
+      "SQL (PostgreSQL)",
       "HTML5",
       "CSS3",
     ],
   },
   {
     title: "Frameworks & Libraries",
-    skills: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Bootstrap",
-      "Material UI",
-    ],
+    skills: ["React", "Next.js", "FastAPI", "Tailwind CSS"],
   },
   {
     title: "Tools & Platforms",
@@ -28,8 +21,8 @@ const skillCategories = [
       "Git/GitHub",
       "Docker",
       "Vercel",
-      "Cloudflare Pages",
-      "Vite",
+      "Railway",
+      "Firebase",
       "Figma",
     ],
   },
