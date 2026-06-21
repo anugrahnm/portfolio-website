@@ -12,7 +12,15 @@ const skillCategories = [
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React", "Next.js", "FastAPI", "Tailwind CSS"],
+    skills: [
+      "React",
+      "Next.js",
+      "FastAPI",
+      "Tailwind CSS",
+      "Vue 3",
+      "Vite",
+      "scikit-learn",
+    ],
   },
   {
     title: "Tools & Platforms",
@@ -21,9 +29,11 @@ const skillCategories = [
       "Git/GitHub",
       "Docker",
       "Vercel",
-      "Railway",
       "Firebase",
       "Figma",
+      "DigitalOcean",
+      "Caddy",
+      "GitHub Actions",
     ],
   },
 ];

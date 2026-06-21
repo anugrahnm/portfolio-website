@@ -25,6 +25,26 @@ const projects = [
     skills: ["Python", "Streamlit", "Google Gemini API"],
   },
   {
+    title: "Shortlist",
+    url: "https://shortlist.anugrah.dev",
+    description:
+      "CV to job description matching tool with TF-IDF and Gemini AI modes.",
+    bullets: [
+      "Built a full-stack CV matching tool with two modes: TF-IDF cosine similarity for fast keyword matching and Google Gemini 3.1 Flash Lite for semantic analysis with URL scraping.",
+      "Deployed on a DigitalOcean VPS with Docker, Caddy reverse proxy, and GitHub Actions CI/CD. Frontend built with Vue 3, Vite, and TypeScript.",
+    ],
+    skills: [
+      "Vue 3",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "scikit-learn",
+      "Gemini API",
+      "Docker",
+      "DigitalOcean",
+    ],
+  },
+  {
     title: "PyReminder API",
     url: "https://pyreminder-api-production.up.railway.app/docs",
     description:
@@ -46,16 +66,6 @@ const projects = [
       "Optimized frontend performance using TypeScript and Tailwind CSS, achieving a 95+ score on Google Lighthouse.",
     ],
     skills: ["Next.js", "Supabase", "PostgreSQL", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "Personal Portfolio",
-    url: "https://anugrah.dev",
-    description: "",
-    bullets: [
-      "Architected and deployed a responsive portfolio using Next.js and TypeScript to showcase technical builds and host interactive demos.",
-      "Leveraged Vercel for continuous deployment with optimized component architecture for server-side rendering.",
-    ],
-    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
 ];
 
