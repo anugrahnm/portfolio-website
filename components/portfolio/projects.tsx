@@ -30,7 +30,7 @@ const projects = [
     description:
       "CV to job description matching tool with TF-IDF and Gemini AI modes.",
     bullets: [
-      "Built a full-stack CV matching tool with two modes: TF-IDF cosine similarity for fast keyword matching and Google Gemini 3.1 Flash Lite for semantic analysis with URL scraping.",
+      "Built a full-stack CV matching tool with two modes: TF-IDF cosine similarity for fast keyword matching and Google Gemini 3.1 Flash Lite for semantic analysis with URL scraping. Supports CV upload with PDF text extraction via PyMuPDF.",
       "Deployed on a DigitalOcean VPS with Docker, Caddy reverse proxy, and GitHub Actions CI/CD. Frontend built with Vue 3, Vite, and TypeScript.",
     ],
     skills: [
@@ -40,6 +40,7 @@ const projects = [
       "Python",
       "scikit-learn",
       "Gemini API",
+      "PyMuPDF",
       "Docker",
       "DigitalOcean",
     ],
